@@ -1,0 +1,165 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "e8346a60-c1f4-30ca-b4d3-c775994ffc14",
+            "id" : "e369e7f3-d67a-388c-a61b-10c32c29eed7",
+            "instanceIdentifier" : "751c4684-0190-1000-9b2d-b98596aaa59f",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "e8346a60-c1f4-30ca-b4d3-c775994ffc14",
+          "identifier" : "a846e44e-639f-3898-a944-6c98891655a3",
+          "instanceIdentifier" : "751c57d7-0190-1000-828d-e94041b8a730",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "e8346a60-c1f4-30ca-b4d3-c775994ffc14",
+            "id" : "06e2ccd1-3b42-3c6a-8066-1260674c101f",
+            "instanceIdentifier" : "751b9710-0190-1000-e1f1-a2bc21e6c5bc",
+            "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "e8346a60-c1f4-30ca-b4d3-c775994ffc14",
+          "identifier" : "e369e7f3-d67a-388c-a61b-10c32c29eed7",
+          "instanceIdentifier" : "751c4684-0190-1000-9b2d-b98596aaa59f",
+          "position" : {
+            "x" : 734.0000054917157,
+            "y" : 484.000002148538
+          }
+        } ],
+        "identifier" : "e8346a60-c1f4-30ca-b4d3-c775994ffc14",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "751b68da-0190-1000-956a-30193c62681d",
+        "labels" : [ ],
+        "name" : "flow_test",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 1489.005079174198,
+          "y" : 176.06146440347771
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.19.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "e8346a60-c1f4-30ca-b4d3-c775994ffc14",
+          "identifier" : "06e2ccd1-3b42-3c6a-8066-1260674c101f",
+          "instanceIdentifier" : "751b9710-0190-1000-e1f1-a2bc21e6c5bc",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "GenerateFlowFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 580.0000054917157,
+            "y" : 147.000002148538
+          },
+          "properties" : {
+            "character-set" : "UTF-8",
+            "File Size" : "0B",
+            "generate-ff-custom-text" : "проверено: Nifi + Git =",
+            "Batch Size" : "1",
+            "Unique FlowFiles" : "false",
+            "Data Format" : "Text"
+          },
+          "propertyDescriptors" : {
+            "character-set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "character-set",
+              "sensitive" : false
+            },
+            "File Size" : {
+              "displayName" : "File Size",
+              "identifiesControllerService" : false,
+              "name" : "File Size",
+              "sensitive" : false
+            },
+            "mime-type" : {
+              "displayName" : "Mime Type",
+              "identifiesControllerService" : false,
+              "name" : "mime-type",
+              "sensitive" : false
+            },
+            "generate-ff-custom-text" : {
+              "displayName" : "Custom Text",
+              "identifiesControllerService" : false,
+              "name" : "generate-ff-custom-text",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "Unique FlowFiles" : {
+              "displayName" : "Unique FlowFiles",
+              "identifiesControllerService" : false,
+              "name" : "Unique FlowFiles",
+              "sensitive" : false
+            },
+            "Data Format" : {
+              "displayName" : "Data Format",
+              "identifiesControllerService" : false,
+              "name" : "Data Format",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
