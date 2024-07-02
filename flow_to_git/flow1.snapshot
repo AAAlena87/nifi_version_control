@@ -62,7 +62,7 @@
         "inputPorts" : [ ],
         "instanceIdentifier" : "74081a9e-0190-1000-e139-e6c532fe8fc5",
         "labels" : [ ],
-        "name" : "flow1",
+        "name" : "flow2",
         "outputPorts" : [ ],
         "position" : {
           "x" : 776.0,

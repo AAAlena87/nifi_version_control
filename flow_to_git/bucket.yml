@@ -1,5 +1,6 @@
 flows:
-  898f2fc0-3a62-4398-b4c4-8aa0b4d7cc4d: {ver: 1, file: flow1.snapshot, comments: '',
-    author: anonymous, created: 1719950702960, flowName: flow1, flowDesc: ''}
+  898f2fc0-3a62-4398-b4c4-8aa0b4d7cc4d: {ver: 2, file: flow1.snapshot, comments: изменено
+      название группы процессоров, author: anonymous, created: 1719951126648, flowName: flow1,
+    flowDesc: ''}
 layoutVer: 1
 bucketId: 2745716d-559b-4144-8c3d-08c92cc8bdce
